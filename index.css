@@ -1,9 +1,23 @@
+/*kereső oldalhoz tartozó css*/
+@import "style.css";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: #3b3939;
 }
+
+.navbar{
+position: sticky;
+top: 0;
+z-index: 1;
+
+}
+.input-group{
+  max-width: 300px;
+
+}
+
 article {
   display: grid;
   grid-template-columns: 1fr;
@@ -16,49 +30,23 @@ article {
 #content{
   display: flex;
   flex-wrap: wrap;
-  
+  gap: 20px;
 }
-.card{
-margin:10px;
-}
+
 #listaPage{
   display:grid;
   grid-template-columns: 1fr 1fr;
   margin-left: 2rem;
 
 }
-/*
-form{
-    box-shadow: 0px 25px 40px #946218f1;
-    margin:20px;
-    display: grid;
-    grid-template-columns: 5fr 1fr;
-    padding: 10px;
-    max-width: fit-content;
- }
- form input{
-    max-width: 350px;
-    margin-bottom:10px;
- }
- .radioLabel{
-    width: fit-content;
-    padding: 20px 5px 20px 0;
- }
- .radioInput{
-    width: fit-content;
-    margin-right:20px;
- } */
- .korInput{
-    width: 60px; 
- }
- .input-group{
-
-  width: 600px;
-  margin:10px;
-  
+#favorite{
+  min-width: fit-content;
+  background-color: rgb(243, 149, 109);
+  border: 1px solid rgb(216, 109, 98);
+}
+.btn{
+  min-width: fit-content;
+  background-color: rgb(243, 149, 109);
+  border: 1px solid rgb(216, 109, 98);
 } 
 
-#tinyImg{
-  max-width: 50px;
- max-height:50px;
-}

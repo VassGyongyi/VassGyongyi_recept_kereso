@@ -16,69 +16,81 @@
       integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
       crossorigin="anonymous"
     ></script>
-    
- 
     <script src="main.js" type="module"></script>
+   
     <link rel="stylesheet" href="index.css" />
     <title>Vass Gyöngyi</title>
   </head>
   <body>
-    <main>
-     
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html">Receptek</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarText"
-              aria-controls="navbarText"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="#tabla"
-                    >Táblázat</a
-                  >
-                </li>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Receptek</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#tablazat"
+                >Táblázat</a
+              >
+            </li>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="#listaPage">Lista</a>
-                </li>
-              </ul>
-              <span class="navbar-text">
-                <a class="nav-link" id="nav-table" href="kedvencek.html"
-                  >Kedvencek</a
-                >
-              </span>
-            </div>
-          </div>
-        </nav>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="#felvitel">Új recept</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="search.html">Recept kereső</a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            
+            <a class="nav-link" id="nav-table" href="kedvencek.html"
+              >Kedvencek</a
+            >
+          </span>
+        </div>
+      </div>
+    </nav>
+    <article>
+      <section class="kartyak" id="kartyak"></section>
+      <section class="tablazat" id="tablazat"></section>
+    </article>
+    <aside id="felvitel">
+      <form action="javascript:void(0)">
+        <fieldset><legend>Új recept</legend></fieldset>
+      <div class="mb-3">
+        <label for="neve">Recept címe:</label>
+        <input type="text" class="form-control" id="neve" name="neve" />
+      </div>
+      <div class="mb-3">
+        <label for="eredet">Recept eredete:</label>
+        <input type="text"  class="form-control"id="eredet" name="eredete" />
+      </div>
+      <div class="mb-3">
+        <label for="fogás">Fogás típusa:</label>
+        <input type="text" class="form-control"id="fogás" name="fogás" />
+      </div>
+      <div class="mb-3">
+        <label for="kalória">Kalória:</label>
+        <input type="number" class="form-control" min="0" max="10000"  id="kalória" name="kalória" />
+      </div>
       
-      <article>
-        <figure class="text-center">
-          <blockquote class="blockquote">
-            <p> angol nyelven használhatod a keresőt</p>
-          </blockquote>
-          <figcaption class="blockquote-footer">
-            vegan, gluten-free, breakfast, desserts, soup, central europe<cite title="Source Title"> ... kereső szavakkal pl.</cite>
-          </figcaption>
-        </figure>
-        
-        <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Course category" aria-label="Recipient's username" aria-describedby="button-addon2">
-            <button class="btn btn-outline-secondary" type="button" id="search">Keresés</button>
-          </div>
-        <div id="content"></div>
-      </article>
-    </main>
+    
+        <input type ="submit" value="Rögzítés" id="rogzitesBtn" />
+      </form>
+    </aside>
   </body>
 </html>

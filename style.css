@@ -1,0 +1,88 @@
+
+
+/* recept oldalhoz tartozó css*/
+* {
+  padding: 2px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+article {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container {
+  max-width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  margin: 10px;
+  background-color: rgb(247, 244, 244);
+}
+.card-text {
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 0.05rem;
+}
+.card-title {
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+.kartyak{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+.tablazat{
+  display: flex;
+  justify-self: flex-start;
+  padding: 20px;
+}
+
+form {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1px solid rgb(156, 151, 151);
+  background-color: rgb(247, 244, 244);
+  width: max-content;
+  padding: 10px;
+  min-width: 600px;
+  margin-left: 50px;
+  border-radius: 2%;
+}
+form input {
+  max-width: 350px;
+  margin-bottom: 10px;
+}
+.torolDiv {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+button {
+  width: 100px;
+  margin: 5px;
+  background-color: rgb(243, 149, 109);
+  border: 1px solid rgb(216, 109, 98);
+  border-radius: 8%;
+  padding: 5px;
+  width: 100px;
+  justify-self: flex-end;
+}
+#rogzitesBtn {
+  background-color: rgb(243, 149, 109);
+  border: 1px solid rgb(216, 109, 98);
+  border-radius: 8%;
+  padding: 5px;
+  justify-self: flex-end;
+}
+@media screen and (min-width: 768px) {
+  .card {
+    width: 30vw;
+    min-width: 350px;
+  }
+}

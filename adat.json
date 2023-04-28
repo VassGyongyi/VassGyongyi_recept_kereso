@@ -1,0 +1,44 @@
+[
+  {
+    "név": "Bean Soup",
+    "eredet": "american",
+    "fogás": "soup",
+    "kalória": 400
+  },
+  {
+    "név": "Lemon or Orange Cake",
+    "eredet": "middle eastern",
+    "fogás": "desserts",
+    "kalória": 1431
+  },
+  {
+    "név": "French Onion Soup",
+    "eredet": "french",
+    "fogás": "soup",
+    "kalória": 3173
+  },
+  {
+    "név": "Tomato soup with pasta",
+    "eredet": "american",
+    "fogás": "soup",
+    "kalória": 973
+  },
+  {
+    "név": "Caramel Cake",
+    "eredet": "italien",
+    "fogás": "desserts",
+    "kalória": 4210
+  },
+  {
+    "név": "Orange Pound Cake",
+    "eredet": "british",
+    "fogás": "desserts",
+    "kalória": 3378
+  },
+  {
+    "név": "Country Ham Biscuits",
+    "eredet": "american",
+    "fogás": "biscuits and cookies",
+    "kalória": 3378
+  }
+]

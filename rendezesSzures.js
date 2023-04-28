@@ -8,7 +8,7 @@ export function rendezBarmiSzerint(lista, kulcs) {
         }
         return 0;
       });
-      console.log(rendezettLista)
+      //console.log(rendezettLista)
       return rendezettLista;
       
     }
