@@ -1,4 +1,4 @@
-import {receptek} from "./adat.json"
+//import {receptek} from "./adat.json"
 import {osszeallit, osszeallit2} from "./adatkezeles.js";
 //import { rendezBarmiSzerint } from "./rendezesSzures.js";
 let kartyak;
